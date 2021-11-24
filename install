@@ -4,6 +4,7 @@
 . install_zsh.sh
 
 # Make sure we have ruby
+sudo apt-get update
 sudo apt install gcc make
 sudo apt install ruby
 sudo apt install ruby-dev
