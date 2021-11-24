@@ -13,3 +13,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Install powerlevel10k.
 rm -rf ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k >/dev/null && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# Install git flow completion
+git clone https://github.com/bobthecow/git-flow-completion ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/git-flow-completion
