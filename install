@@ -4,6 +4,7 @@
 . install_zsh.sh
 
 # Make sure we have ruby 
+sudo apt-get install ubuntu-dev-tools
 sudo apt install ruby
 sudo apt install ruby-dev
 
