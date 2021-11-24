@@ -8,7 +8,7 @@ sudo apt install ruby
 sudo apt install ruby-dev
 
 # Install colorls
-gem install colorls
+sudo gem install colorls
 
 set -e
 
@@ -23,4 +23,4 @@ cd "${BASEDIR}"
 (cd "${DOTBOT_DIR}" && git submodule update --init --recursive)
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 
-ch -s /usr/bin/zsh
+chsh -s /usr/bin/zsh
