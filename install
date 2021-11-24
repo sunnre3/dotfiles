@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
 # Make sure zsh is installed.
-apt install zsh
-
-# Install oh-my-zsh.
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+. install_zsh.sh
 
 # Make sure we have ruby 
 sudo apt install ruby
