@@ -4,8 +4,8 @@
 . install_zsh.sh
 
 # Make sure we have ruby 
-sudo apt-get install ubuntu-dev-tools
 sudo apt install ruby
+sudo apt install rbenv
 sudo apt install ruby-dev
 
 # Install colorls
