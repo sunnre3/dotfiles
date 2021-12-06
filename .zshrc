@@ -39,6 +39,8 @@ alias dev="$HOME/dev"
 alias repos="$HOME/dev/repos"
 alias hosts="$HOME/dev/hosts"
 alias ls='colorls -lA --sd'
+alias subl='code'
+alias dirbuster='source /opt/dirbuster/DirBuster-1.0-RC1.sh'
 
 # Some git aliases.
 alias gst='git status'
@@ -53,11 +55,6 @@ ch() {
 
 gprune() {
 	git fetch --prune && git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
-}
-
-# WSL2 functions.
-function subl() {
-	subl.exe $1
 }
 
 function explorer() {
@@ -80,3 +77,6 @@ source $ZSH_CUSTOM/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
+
+export PATH="$PATH:/opt"
+
